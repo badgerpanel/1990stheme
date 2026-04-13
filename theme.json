@@ -13,6 +13,7 @@
   "overrides": [
     "pages/auth/login",
     "pages/dashboard",
+    "pages/notifications",
     "layouts/auth",
     "layouts/dashboard",
     "layouts/billing",

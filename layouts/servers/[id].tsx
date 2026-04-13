@@ -46,8 +46,8 @@ export default function Win95ServerLayout({ children }: { children: React.ReactN
               <button onClick={() => router.push('/dashboard')} className="w-4 h-[14px] bg-[#c0c0c0] text-[8px] flex items-center justify-center" style={{ border: '1px solid', borderColor: 'white #000 #000 white' }}>x</button>
             </div>
           </div>
-          {/* Content - renders the server dashboard with sidebar */}
-          <div className="flex-1 overflow-auto win95-content">
+          {/* Content - keep dark theme for server console/dashboard */}
+          <div className="flex-1 overflow-auto" style={{ background: '#18181b', color: '#e4e4e7' }}>
             <ServerDashboardLayout>{children}</ServerDashboardLayout>
           </div>
         </div>
