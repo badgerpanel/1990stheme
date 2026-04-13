@@ -1,0 +1,89 @@
+/* Windows 95 Theme - Scoped Styles */
+/* Only affects pages wrapped in .win95 class. Other pages use the default theme. */
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --win95-bg: #008080;
+  --win95-silver: #c0c0c0;
+  --win95-white: #ffffff;
+  --win95-black: #000000;
+  --win95-blue: #000080;
+  --win95-title-blue: #000080;
+  --win95-title-text: #ffffff;
+  --win95-button-face: #c0c0c0;
+  --win95-button-highlight: #ffffff;
+  --win95-button-shadow: #808080;
+  --win95-button-dark-shadow: #000000;
+}
+
+/* Scoped to .win95 wrapper - does NOT affect admin, billing, account etc. */
+.win95 {
+  font-family: 'VT323', 'MS Sans Serif', 'Segoe UI', Tahoma, sans-serif !important;
+  background: var(--win95-bg) url('/w95.jpg') no-repeat center center fixed !important;
+  background-size: cover !important;
+  color: var(--win95-black) !important;
+  font-size: 16px;
+}
+
+.win95 * {
+  border-radius: 0 !important;
+}
+
+.win95 [data-glass-enabled="true"] {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.win95 .glow-orb {
+  display: none !important;
+}
+
+/* Fix contrast in Win95 window content areas */
+.win95-content {
+  background: #c0c0c0 !important;
+  color: #000 !important;
+}
+
+.win95-content input,
+.win95-content textarea,
+.win95-content select {
+  background: #fff !important;
+  color: #000 !important;
+  border: 2px solid !important;
+  border-color: #808080 #fff #fff #808080 !important;
+}
+
+.win95-content label {
+  color: #000 !important;
+}
+
+.win95-content h1, .win95-content h2, .win95-content h3,
+.win95-content h4, .win95-content h5, .win95-content h6 {
+  color: #000 !important;
+}
+
+.win95-content p, .win95-content span, .win95-content div {
+  color: inherit;
+}
+
+.win95-content a {
+  color: #000080 !important;
+}
+
+.win95-content button {
+  background: #c0c0c0 !important;
+  color: #000 !important;
+  border: 2px solid !important;
+  border-color: #fff #000 #000 #fff !important;
+}
+
+.win95-content button:active {
+  border-color: #000 #fff #fff #000 !important;
+}
+
+/* Win95 scrollbar - only inside .win95 */
+.win95 ::-webkit-scrollbar { width: 16px; height: 16px; }
+.win95 ::-webkit-scrollbar-track { background: repeating-conic-gradient(#c0c0c0 0% 25%, #fff 0% 50%) 50% / 2px 2px; }
+.win95 ::-webkit-scrollbar-thumb { background: #c0c0c0; border: 2px solid; border-color: #fff #000 #000 #fff; }
+.win95 ::-webkit-scrollbar-button { background: #c0c0c0; border: 1px solid; border-color: #fff #000 #000 #fff; }

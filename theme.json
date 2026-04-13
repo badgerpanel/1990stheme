@@ -1,0 +1,30 @@
+{
+  "name": "Windows 95",
+  "slug": "windows95",
+  "version": "1.0.0",
+  "description": "A nostalgic 1990s Windows-inspired theme with classic beveled borders, teal desktop, and Start menu navigation.",
+  "author": {
+    "name": "BadgerPanel",
+    "url": "https://badgerpanel.com"
+  },
+  "compatibility": {
+    "panel_min": "0.1.0"
+  },
+  "overrides": [
+    "pages/auth/login",
+    "pages/dashboard",
+    "layouts/auth",
+    "layouts/dashboard",
+    "layouts/billing",
+    "layouts/support",
+    "layouts/account",
+    "layouts/servers",
+    "layouts/servers/[id]",
+    "components/layout/sidebar",
+    "components/layout/header",
+    "components/layout/footer",
+    "components/ui/button",
+    "components/ui/card",
+    "styles/globals"
+  ]
+}
