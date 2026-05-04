@@ -42,7 +42,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         {isLoading ? (
-          <span className="mr-2 inline-block animate-spin">&#9201;</span>
+          <span className="mr-2 inline-block w-3 h-3 border-2 border-current border-t-transparent rounded-full animate-spin"></span>
         ) : null}
         {children}
       </button>

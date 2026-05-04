@@ -129,7 +129,6 @@ export default function Win95Desktop() {
   const welcomeWindow = (
     <div className="p-4" style={{ fontFamily: "'VT323', monospace" }}>
       <div className="flex items-start gap-3 mb-3">
-        <span className="text-4xl">&#128075;</span>
         <div>
           <p className="font-bold mb-1">Welcome to BadgerPanel, {user?.first_name || user?.username}!</p>
           <p className="text-[#808080] text-sm">{servers.length} server(s) configured. {runningCount > 0 && `${runningCount} running.`}</p>

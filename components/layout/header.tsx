@@ -50,7 +50,7 @@ export function Header() {
             {unreadCount > 0 && (
               <span className="bg-red-600 text-white px-1 text-[10px] font-bold">{unreadCount}</span>
             )}
-            &#9993; Mail
+            Mail
           </button>
 
           {showNotifs && (

@@ -169,7 +169,7 @@ export default function Win95DashboardLayout({ children }: { children: React.Rea
           fontWeight: 'bold', fontSize: 12, display: 'flex', alignItems: 'center', gap: 3,
           cursor: 'pointer', fontFamily: "'VT323', monospace",
         }}>
-          <span style={{ fontSize: '14px' }}>&#127987;</span>Start
+          Start
         </button>
         <div style={{ width: 1, height: 20, borderLeft: '1px solid #808080', borderRight: '1px solid white' }} />
 

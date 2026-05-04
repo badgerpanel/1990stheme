@@ -70,7 +70,6 @@ export default function Win95LoginPage() {
           {/* Title bar */}
           <div className="flex items-center justify-between px-2 py-1" style={{ background: 'linear-gradient(90deg, #000080, #1084d0)' }}>
             <div className="flex items-center gap-2">
-              <span className="text-sm">&#128274;</span>
               <span className="text-white text-sm font-bold">Welcome to {panelName}</span>
             </div>
             <div className="flex gap-[2px]">
@@ -82,7 +81,6 @@ export default function Win95LoginPage() {
           {/* Content */}
           <div className="p-5">
             <div className="flex gap-4 mb-5">
-              <div className="text-4xl shrink-0">&#128187;</div>
               <div>
                 <p className="text-sm font-bold mb-1">Press Ctrl+Alt+Delete to begin.</p>
                 <p className="text-xs text-[#808080]">Enter your credentials to log on to the server management panel.</p>
@@ -91,7 +89,6 @@ export default function Win95LoginPage() {
 
             {error && (
               <div className="mb-4 p-2 bg-white flex items-start gap-2" style={{ border: '2px solid', borderColor: '#808080 white white #808080' }}>
-                <span className="text-red-600 text-lg shrink-0">&#9888;</span>
                 <p className="text-xs text-red-700">{error}</p>
               </div>
             )}
